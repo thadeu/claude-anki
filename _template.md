@@ -1,29 +1,29 @@
-# AAAA-MM-DD — <título da dúvida>
+# YYYY-MM-DD — <title of the doubt>
 
-> **Dúvida do dia:** <a pergunta em uma frase>
+> **Doubt of the day:** <the question in one sentence>
 
-## Regra de ouro
+## Golden rule
 
-<a regra em 1-2 linhas — o que decorar se só sobrar 10 segundos>
+<the rule in 1-2 lines — what to memorize if you only have 10 seconds>
 
-## Por quê
+## Why
 
-<a explicação curta. de onde vem a regra>
+<the short explanation. where the rule comes from>
 
-## A pegadinha mais comum
+## Most common trap
 
-- ❌ <erro frequente>
-- ✅ <forma correta>
+- ❌ <frequent mistake>
+- ✅ <correct form>
 
-## Tabela
+## Table
 
-| Caso | Forma | Exemplo |
+| Case | Form | Example |
 | --- | --- | --- |
 |  |  |  |
 
-## Dica de memória
+## Memory trick
 
-<um truque mnemônico>
+<a mnemonic>
 
 ## Mini-quiz
 
@@ -33,10 +33,10 @@
 
 ## Flashcards
 
-- **Frente:** <pergunta> → **Verso:** <resposta>
+- **Front:** <question> → **Back:** <answer>
 
 ---
 
-### Gabarito do mini-quiz
+### Mini-quiz answer key
 
 1. ...

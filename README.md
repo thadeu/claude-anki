@@ -1,17 +1,17 @@
 # claude-anki 🇬🇧
 
-Uma lição de inglês por dia. Cada arquivo é curto, focado em **uma dúvida real**, e escrito pra ser:
+One English lesson a day. Each file is short, focused on **a single real doubt**, and written to be:
 
-1. **Lido como nota** — explico em português, com exemplos em inglês.
-2. **Estudado como flashcard** — toda lição termina com uma seção `Flashcards` no formato `Frente → Verso`, fácil de jogar no Anki ou revisar no Notes.
+1. **Read as a note** — explained in plain language, with examples in English.
+2. **Drilled as a flashcard** — every lesson ends with a `Flashcards` section in `Front → Back` form, easy to drop into Anki or review in Notes.
 
-## Como funciona
+## How it works
 
-- Toda lição vive em `lessons/AAAA-MM-DD-titulo.md`.
-- Uma dúvida por dia. Pequena e digerível vence "completa e esquecida".
-- No fim de cada lição: **mini-quiz** (com gabarito no rodapé) + **flashcards**.
+- Every lesson lives in `lessons/YYYY-MM-DD-title.md`.
+- One doubt per day. Small and digestible beats complete and forgotten.
+- Each lesson ends with a **mini-quiz** (answer key at the bottom) + **flashcards**.
 
-## Instalação
+## Install
 
 ```bash
 git clone https://github.com/thadeu/claude-anki.git
@@ -19,46 +19,46 @@ cd claude-anki
 ./install.sh
 ```
 
-O `install.sh` cria symlinks em `~/.claude/` (não importa onde você clonou o repo — cada máquina resolve o próprio caminho):
+`install.sh` creates symlinks under `~/.claude/` (it doesn't matter where you cloned the repo — each machine resolves its own path):
 
-| Symlink | Aponta pra |
+| Symlink | Points to |
 | --- | --- |
-| `~/.claude/anki-data` | a raiz do repo (lições, template, README) |
-| `~/.claude/commands/anki` | `commands/` (os `/anki:*`) |
-| `~/.claude/skills/anki` | `skills/anki/` (a house style) |
+| `~/.claude/anki-data` | the repo root (lessons, template, README) |
+| `~/.claude/commands/anki` | `commands/` (the `/anki:*` commands) |
+| `~/.claude/skills/anki` | `skills/anki/` (the house style) |
 
-Depois reinicie o Claude Code pra carregar os comandos.
+Then restart Claude Code to load the commands.
 
-## Comandos (`/anki:*`)
+## Commands (`/anki:*`)
 
-| Comando | O que faz |
+| Command | What it does |
 | --- | --- |
-| `/anki:today [tema]` | Lição de hoje — cria uma nova (ou revisa a de hoje se já existir). Tema opcional. |
-| `/anki:yesterday` | Revisa a lição de ontem (quiz primeiro, gabarito depois). |
-| `/anki:review [data\|tema]` | Treina qualquer lição passada — aleatória se sem argumento. |
-| `/anki:list` | Lista todas as lições, mais recentes primeiro. |
+| `/anki:today [topic]` | Today's lesson — creates a new one (or reviews today's if it already exists). Topic optional. |
+| `/anki:yesterday` | Reviews yesterday's lesson (quiz first, answers after). |
+| `/anki:review [date\|topic]` | Drills any past lesson — random if no argument. |
+| `/anki:list` | Lists every lesson, newest first. |
 
-A "house style" (formato, tom PT→EN, gabarito) fica na skill em `skills/anki/SKILL.md`.
+The house style (format, tone, answer key) lives in the skill at `skills/anki/SKILL.md`.
 
-## Rotina sugerida
+## Suggested routine
 
-| Quando | O quê |
+| When | What |
 | --- | --- |
-| Hoje | Ler a lição nova + fazer o mini-quiz |
-| Amanhã | Revisar os flashcards da lição de ontem antes de abrir a nova |
-| Toda semana | Reler os títulos em `lessons/` — o que ainda trava? Vira lição de revisão. |
+| Today | Read the new lesson + take the mini-quiz |
+| Tomorrow | Review yesterday's flashcards before opening the new one |
+| Weekly | Re-read the titles in `lessons/` — what still trips you up? Turn it into a review lesson. |
 
-## Privacidade das lições
+## Lesson privacy
 
-Por padrão, suas lições diárias **ficam locais** — o `.gitignore` ignora `lessons/*.md` (só o `example-*.md` vai versionado, como amostra). Assim seu estudo não vai pro GitHub público. Se você preferir sincronizar as lições entre máquinas via git, remova essa linha do `.gitignore`.
+By default your daily lessons **stay local** — `.gitignore` ignores `lessons/*.md` (only `example-*.md` is versioned, as a sample). That keeps your study out of the public repo. If you'd rather sync lessons across machines via git, remove that line from `.gitignore`.
 
-## Importar pro Notes (macOS)
+## Import into Notes (macOS)
 
-Markdown cola limpo no Notes (títulos viram títulos, listas viram listas). Opções:
+Markdown pastes cleanly into Notes (headings become headings, lists become lists). Options:
 
-- **Manual:** abrir o `.md`, copiar tudo, colar numa nota nova.
-- **Atalho (Shortcuts):** criar um atalho "Get File → Create Note" apontando pra `lessons/`.
+- **Manual:** open the `.md`, copy everything, paste into a new note.
+- **Shortcut (Shortcuts app):** build a "Get File → Create Note" shortcut pointing at `lessons/`.
 
-## Exemplo
+## Example
 
 - [don't vs doesn't](lessons/example-dont-vs-doesnt.md)
