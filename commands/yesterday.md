@@ -2,7 +2,7 @@
 description: anki:yesterday — review yesterday's English lesson (spaced repetition)
 ---
 
-Review yesterday's English lesson. Follow the `anki` skill conventions (`~/.claude/anki-data/skills/anki/SKILL.md`).
+Review yesterday's English lesson. Follow the `anki` skill conventions (`~/.claude/skills/anki/SKILL.md`).
 
 Steps:
 

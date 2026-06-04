@@ -13,6 +13,8 @@ One English lesson a day. Each file is short, focused on **a single real doubt**
 
 ## Install
 
+### Option A — clone + `install.sh` (full setup: skill + commands)
+
 ```bash
 git clone https://github.com/thadeu/claude-anki.git
 cd claude-anki
@@ -27,7 +29,15 @@ cd claude-anki
 | `~/.claude/commands/anki` | `commands/` (the `/anki:*` commands) |
 | `~/.claude/skills/anki` | `skills/anki/` (the house style) |
 
-Then restart Claude Code to load the commands.
+### Option B — `npx skills add` (skill only)
+
+```bash
+npx skills add thadeu/claude-anki -a claude-code
+```
+
+This installs **just the skill** to `~/.claude/skills/anki/`. The `npx skills` tool only handles `SKILL.md` files, so the `/anki:*` slash commands are **not** installed — but the skill is self-contained: it creates its own `~/.claude/anki-data/lessons/` on first use, carries the lesson template inline, and runs every flow from natural language ("today's English lesson", "review yesterday's lesson", etc.). Use Option A if you want the slash commands too.
+
+Either way, restart Claude Code after installing.
 
 ## Commands (`/anki:*`)
 

@@ -2,7 +2,7 @@
 description: anki:review — drill any past English lesson (random, or by date/topic)
 ---
 
-Drill a past English lesson for spaced repetition. Follow the `anki` skill conventions (`~/.claude/anki-data/skills/anki/SKILL.md`).
+Drill a past English lesson for spaced repetition. Follow the `anki` skill conventions (`~/.claude/skills/anki/SKILL.md`).
 
 Selector from the user (optional): `$ARGUMENTS` — may be a date (YYYY-MM-DD), a topic keyword, or empty.
 
