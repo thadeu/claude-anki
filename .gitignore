@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Personal daily lessons stay local (privacy).
+# An example lesson is force-committed below so the template ships with a sample.
+# Remove these lines if you'd rather sync your lessons across machines via git.
+lessons/*.md
+!lessons/example-dont-vs-doesnt.md
